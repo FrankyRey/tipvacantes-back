@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PruebasController;
+use App\Http\Controllers\UserController;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,10 @@ Route::get('/welcome', function () {
 
 
 Route::get('/test', [PruebasController::class, 'testOrm']);
+
+//Rutas API
+Route::get('/usuario/pruebas', [UserController::class, 'pruebas']);
+
+//Rutas de usuario
+Route::post('/api/usuario/registro', [UserController::class, 'register']);
+Route::post('/api/login', [UserController::class, 'login']);
