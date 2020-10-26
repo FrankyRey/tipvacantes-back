@@ -67,7 +67,7 @@ class CategoriaVacanteController extends Controller
             } else {
                 $categoriaVacante = new CategoriaVacante();
                 $categoriaVacante->nombre = $params_array['nombre'];
-                $categoriaVacante->descripcion = $params_array['descripcion'];
+                $categoriaVacante->descripcion = isset($params_array['descripcion']) ? $params_array['descripcion']:null;
                 $categoriaVacante->save();
 
                 $data = array(

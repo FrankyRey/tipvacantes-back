@@ -67,7 +67,7 @@ class EscolaridadController extends Controller
             } else {
                 $escolaridad = new Escolaridad();
                 $escolaridad->nombre = $params_array['nombre'];
-                $escolaridad->descripcion = $params_array['descripcion'];
+                $escolaridad->descripcion = isset($params_array['descripcion']) ? $params_array['descripcion']:null;
                 $escolaridad->save();
 
                 $data = array(

@@ -67,7 +67,7 @@ class AreaEstudioController extends Controller
             } else {
                 $areaEstudio = new AreaEstudio();
                 $areaEstudio->nombre = $params_array['nombre'];
-                $areaEstudio->descripcion = $params_array['descripcion'];
+                $areaEstudio->descripcion = isset($params_array['descripcion']) ? $params_array['descripcion']:null;
                 $areaEstudio->save();
 
                 $data = array(
