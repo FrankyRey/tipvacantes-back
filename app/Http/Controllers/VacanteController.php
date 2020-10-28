@@ -61,7 +61,7 @@ class VacanteController extends Controller
                 $data = array(
                     'code'      => 400,
                     'status'    => 'error',
-                    'message'   => 'No se ha creado la categoráa'
+                    'message'   => 'No se ha creado la categoria'
                 );
             } else {
                 $vacante= new Vacante();
