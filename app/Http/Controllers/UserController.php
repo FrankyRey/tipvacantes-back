@@ -104,7 +104,7 @@ class UserController extends Controller
             //Devolver token o datos
             $singup = $jwtAuth->singup($params->email, $pwd);
 
-            if(!empty($params->getTooken)) {
+            if(!empty($params->getToken)) {
                 $singup = $jwtAuth->singup($params->email, $pwd, true);
             }
         }
