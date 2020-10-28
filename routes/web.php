@@ -7,6 +7,7 @@ use App\Http\Controllers\AreaEstudioController;
 use App\Http\Controllers\CategoriaVacanteController;
 use App\Http\Controllers\EscolaridadController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\VacanteController;
 use App\Http\Middleware\ApiAuthMiddleware;
 use Facade\FlareClient\Api;
 
@@ -46,3 +47,6 @@ Route::resource('/api/catalogos/escolaridad', EscolaridadController::class);
 
 //Rutas Clientes
 Route::resource('/api/cliente', ClienteController::class);
+
+//Rutas Vacantes
+Route::resource('/api/vacante', VacanteController::class);

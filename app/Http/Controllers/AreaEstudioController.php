@@ -39,7 +39,7 @@ class AreaEstudioController extends Controller
             $data = array(
                 'code'      => 404,
                 'status'    => 'error',
-                'message' => 'La caregoria no existe'
+                'message' => 'La categoria no existe'
             );
         }
 
